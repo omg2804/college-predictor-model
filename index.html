@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="heading">
     <header><h1>College Predictor</h1></header>
     <div id="para1"><p>Your college guide</p></div>
+    <hr class="title-line">
+</div>
 
     <div id="details">
         <div id="Rank" style="margin-bottom: 20px;">
@@ -29,9 +32,50 @@
 
         <div id="State">
             <label for="textInput">Home State:</label>
-            <input type="text" id="homestate"  style="margin-left: 70px; background-color: aquamarine;" >
+            <input type="text" id="homestate"  style="margin-left: 70px;" >
         </div>
     </div>
+
+    <div id="requirements">
+        <h2>Requirements</h2>
+        <div id="prio1">
+        <label for="priority1">Priority 1:</label>
+        <select id="priority1">
+            <option value="" disabled selected>Select Priority</option>
+            <option value="Placement">Placement</option>
+            <option value="Higher Studies">Higher Studies</option>
+            <option value="Near Home Town">Closeness to home</option>
+            
+        </select>
+        </div>
+
+        <div id="prio2">
+        <label for="priority2">Priority 2:</label>
+        <select id="priority2">
+            <option value="" disabled selected>Select Priority</option>
+            <option value="Placement">Placement</option>
+            <option value="Higher Studies">Higher Studies</option>
+            <option value="Near Home Town">Closeness to home</option>
+            
+        </select>
+        </div>
+
+        <div id="prio3">
+        <label for="priority3">Priority 3:</label>
+        <select id="priority3">
+            <option value="" disabled selected>Select Priority</option>
+            <option value="Placement">Placement</option>
+            <option value="Higher Studies">Higher Studies</option>
+            <option value="Near Home Town">Closeness to home</option>
+            
+        </select>
+        </div>
+        <div id="show college">
+            <button>Show Colleges</button>
+        </div>
+    </div>
+
+    
 
 </body>
 </html>
