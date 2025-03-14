@@ -1,0 +1,23 @@
+header{
+    height: 22px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#details{
+    margin-top: 120px;
+    height: 100px;
+    font-size: 18px;
+}
+
+#rank{
+    color: black;
+    height: 15px;
+    width: 160px;
+    background-color:aquamarine;
+}
+
+#homestate{
+    background-color: aquamarine;
+    height: 15px;
+    width: 160px;
+}

@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header><h1>College Predictor</h1></header>
+    <div id="para1"><p>Your college guide</p></div>
+
+    <div id="details">
+        <div id="Rank" style="margin-bottom: 20px;">
+    <label for="numInput">Enter rank:</label>
+    <input type="text" id="rank" style="margin-left: 80px;">
+        </div>
+        
+        <div id="cat" style="margin-bottom: 20px;">
+    <label for="category">Enter category:</label>
+    <select id="category" name="category" style="margin-left: 50px;">
+        <option value="" disabled selected>Select a category</option>
+        <option value="OBC-NCL">OBC-NCL</option>
+        <option value="SC">SC</option>
+        <option value="ST">ST</option>
+        <option value="EWS">EWS</option>
+    </select>
+        </div>
+
+        <div id="State">
+            <label for="textInput">Home State:</label>
+            <input type="text" id="homestate"  style="margin-left: 70px; background-color: aquamarine;" >
+        </div>
+    </div>
+
 </body>
 </html>
