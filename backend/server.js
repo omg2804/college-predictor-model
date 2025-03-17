@@ -23,3 +23,25 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const College = require("./models/College"); // Import the model
+
+// API to add a college
+app.post("/add-college", async (req, res) => {
+  try {
+    const newCollege = new College(req.body);
+    await newCollege.save();
+    res.status(201).send({ message: "College added successfully!" });
+  } catch (error) {
+    res.status(500).send({ error: error.message });
+  }
+});
+
+// API to get all colleges
+app.get("/colleges", async (req, res) => {
+  try {
+    const colleges = await College.find();
+    res.status(200).json(colleges);
+  } catch (error) {
+    res.status(500).send({ error: error.message });
+  }
+});
