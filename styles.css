@@ -73,13 +73,14 @@ button:hover {
 }
 
 #college-results {
+    display: block; /* Ensure it is not hidden */
     margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
+    padding: 10px;
+    border: 1px solid #ccc;
     background: #f9f9f9;
-    border-radius: 8px;
-    display: none; /* Hide by default */
+    border-radius: 5px;
 }
+
 
 #college-list {
     list-style-type: none;
